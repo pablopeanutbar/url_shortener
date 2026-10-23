@@ -12,10 +12,9 @@ const shortId = nanoid(8)
         shortId:shortId,
         redirectUrl:body.url
     })
-    return res.render("urls",{
-    "shortId": shortId,
-    "redirectUrl": body.url
-})
+    return res.status(201).json({
+        shortId: shortId
+    })
 }
 
 export async function handleShortUrl(req,res){

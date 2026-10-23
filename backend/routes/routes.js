@@ -4,8 +4,9 @@ import URL from '../model/url-schema.js'
 
 const routes = express.Router();
 
-routes.get('/',(req,res)=>{
-    res.render('home')
+routes.get('/',async(req,res)=>{
+    const allUrls = await URL.find({});
+    return res.json(allUrls)
 })
 
 

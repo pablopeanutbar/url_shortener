@@ -1,0 +1,44 @@
+.hero-section{
+    background-color:rgb(0, 0, 0);
+    height: 100px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.form{
+
+    text-align: center;
+    padding: 30px;
+}
+
+.btn{
+ padding: 5px;
+ cursor: pointer;
+}
+
+.input-field{
+   border-radius: 4px;
+   padding: 5px;
+   
+}
+.result-section{
+    text-align: center;
+    
+}
+.result-history{
+    text-align: center;
+    margin-top: 30px;
+}
+.history-table{
+    margin: 15px auto;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+.history-table th,
+.history-table td{
+    padding: 8px 16px;
+    border: 1px solid black;
+    text-align: center;
+}
