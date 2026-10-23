@@ -12,15 +12,18 @@ const shortId = nanoid(8)
         shortId:shortId,
         redirectUrl:body.url
     })
-    return res.json({id :shortId})
+    return res.render("urls",{
+    "shortId": shortId,
+    "redirectUrl": body.url
+})
 }
 
 export async function handleShortUrl(req,res){
     const shortIdCreated = req.params.id
-    console.log("id recieved:",shortIdCreated)
+    // console.log("id recieved:",shortIdCreated)
     
     const entry = await URL.findOne({shortId:shortIdCreated});
-    console.log("entry found")
+    // console.log("entry found")
     if(!entry){
         return res.status(404).json({message:"short url is not valid"})
     }

@@ -10,9 +10,11 @@
     "start": "nodemon index.js"
   },
   "dependencies": {
+    "ejs": "^7.0.2",
     "express": "^5.3.0",
     "mongoose": "^9.11.2",
     "nanoid": "^5.1.16",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "pug": "^3.0.4"
   }
 }
